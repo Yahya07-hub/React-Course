@@ -80,50 +80,14 @@
 
 // export default App;
 
-import reactImg from "./assets/react-core-concepts.png"
-// import componentImg from "./assets/components.png"
+
+// import reactImg from "./assets/react-core-concepts.png"
+
 import { CORE_CONCEPTS } from "./data.js";
+import Header from "./components/Header/Header.jsx";
+import CoreConcept from "./components/CoreConcept.jsx"
 
-const reactDescription = ['Fundamental', 'Crucial', 'Core'];
 
-function genRandomDesc(max) {
-  return Math.floor(Math.random() * max)
-
-}
-
-function Header() {
-
-  return (
-    <header>
-      <img src={reactImg} alt="Stylized atom" />
-      <h1>React Essentials</h1>
-      <p>
-        {reactDescription[genRandomDesc(reactDescription.length)]} React concepts you will need for almost any app you are
-        going to build!
-      </p>
-    </header>
-  )
-}
-
-// function CoreConcept(props) {
-//   return (
-//     <li>
-//       <img src={props.image} alt={props.title} />
-//       <h3>{props.title}</h3>
-//       <p>{props.description}</p>
-//     </li>
-//   )
-// } //can use like this 
-
-function CoreConcept(image, title, description) {
-  return (
-    <li>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
-  )
-}
 
 function App() {
   return (
@@ -160,7 +124,4 @@ function App() {
   );
 }
 
-
 export default App;
-
-
